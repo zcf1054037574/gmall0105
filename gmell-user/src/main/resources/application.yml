@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://47.98.168.51:3306/gmell_study_dev?characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.atguigu.gmell.user.mapper
+
+
+server:
+  port: 8082
+
+
+logging:
+  level:
+    root: info
